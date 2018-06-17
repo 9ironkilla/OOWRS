@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Welcome to the Work Request System</h1>
+    <p class="lead">This system will allow you to create, edit, complete and delete work requests.</p>
+    <img src="../../Img/OO-Banner.jpg" alt="" style="height:300px; width: 850px";  />
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+    </div>
+        <div class="col-md-3">
+            <h2>Create</h2>
+
+            <p> <input value="Create" type="button" class="btn btn-default" onclick="location.href='@Url.Action("Create", "WorkRequest")'" />  </p>
+        </div>
+        <div class="col-md-3">
+            <h2>View</h2>
+            <p> <input value="View All" type="button" class="btn btn-default" onclick="location.href='@Url.Action("AllWorkRequests", "WorkRequest")'" />  </p>
+        </div>
+        <div class="col-md-3">
+            <h2>Search</h2>
+            <p> <input value="Search" type="button" class="btn btn-default" onclick="location.href='@Url.Action("Search", "WorkRequest")'" />  </p>
+        </div>
+    </div>
